@@ -1,0 +1,35 @@
+= Groseillier
+
+This gem is the core of the Groseillier project  (https://github.com/Titinux/Groseillier).
+It provides an admin panel and common functionalities for all addons that will be plugged in.
+
+== Warning
+
+This project is under heavy development and so it should not be used for production yet.
+
+== Main features
+
+=== Admin part
+
+* Full administration interface protected by the Devise authentication system. (https://github.com/plataformatec/devise)
+* Using light and functional theme based on the latest innovations introduced by HTML5 and CSS3.
+
+=== Common functionalities
+
+This gem offers many functionalities to help integration of addons within the admin panel such as :
+
+* Methods to declare the addon and its menus
+* Helpers to keep views uniforms
+
+=== Dynamic application configuration
+
+Configuration of the application can be done in the dedicated admin section without modify rails configuration files.
+
+== Contributors
+
+* Jérémie Horhant - Progralab (https://github.com/Titinux)
+
+== License
+
+This project is placed under the AGPLv3 free license. You should have received a copy of the
+GNU AFFERO GENERAL PUBLIC LICENSE along with this program. If not, see <http://www.gnu.org/licenses/agpl.html>
