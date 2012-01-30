@@ -1,0 +1,34 @@
+html, body
+  background-color: #CCCCCC
+  height: 100%
+  width: 100%
+
+div, header, footer
+  +box-sizing(border-box)
+
+#layout
+  min-height: 100%
+  position: relative
+
+#page
+  +container
+  padding-top: $layout-header-height + 15px
+  padding-bottom: 45px
+
+footer
+  +container
+  height: $layout-footer-height
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+
+  div
+    margin: 0 10px
+    padding: 10px
+    background-color: white
+
+    //+box-shadow(inset 0px 1px 1px #909193, 0px 1px 0px #fff)
+    +single-box-shadow(#555555, 0, 0, 5px, 1px, inset)
+    +border-top-left-radius
+    +border-top-right-radius

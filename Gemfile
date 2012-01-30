@@ -15,3 +15,6 @@ gemspec
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+#gem "bootstrap-sass", git: "git://github.com/thomas-mcdonald/bootstrap-sass.git", branch: "2.0"
+gem "compass", "0.12.alpha.4"

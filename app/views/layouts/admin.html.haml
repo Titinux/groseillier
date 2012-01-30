@@ -1,0 +1,46 @@
+!!! 5
+%html{ html_attrs(I18n.locale) }
+  %head
+    %meta{ :charset => 'UTF-8' }
+    = csrf_meta_tags
+
+    %title Groseillier
+
+    = stylesheet_link_tag 'groseillier/admin', :media => 'screen, projection'
+
+  -#%body{:class => page_class}
+  %body
+    #layout
+      %header
+        %div.brand= link_to 'Groseillier'
+        %nav.horizontal
+          %ul
+            %li.active= link_to 'Home'
+            %li= link_to 'Contact'
+            %li= link_to 'About'
+          %ul.right
+            %li= link_to 'Logout'
+
+      #page
+        .frame
+          .frame-header
+            %h1 Page title
+
+          .frame-content
+            .spa
+              Main content
+              Generates a form containing a single button that submits to the URL created by the set of options. This is the safest method to ensure links that cause changes to your data are not triggered by search bots or accelerators. If the HTML button does not work with your layout, you can also consider using the link_to method with the :method modifier as described in the link_to documentation.
+              Generates a form containing a single button that submits to the URL created by the set of options. This is the safest method to ensure links that cause changes to your data are not triggered by search bots or accelerators. If the HTML button does not work with your layout, you can also consider using the link_to method with the :method modifier as described in the link_to documentation.
+              By default, the generated form element has a class name of button_to to allow styling of the form itself and its children. This can be changed using the :form_class modifier within html_options. You can control the form submission and input element behavior using html_options. This method accepts the :method and :confirm modifiers described in the link_to documentation. If no :method modifier is given, it will default to performing a POST operation. You can also disable the button by passing :disabled => true in html_options. If you are using RESTful routes, you can pass the :method to change the HTTP verb used to submit the form.
+
+            .spa
+              Secondary content
+              By default, the generated form element has a class name of button_to to allow styling of the form itself and its children. This can be changed using the :form_class modifier within html_options. You can control the form submission and input element behavior using html_options. This method accepts the :method and :confirm modifiers described in the link_to documentation. If no :method modifier is given, it will default to performing a POST operation. You can also disable the button by passing :disabled => true in html_options. If you are using RESTful routes, you can pass the :method to change the HTTP verb used to submit the form.
+
+          .frame-footer
+
+      %footer
+        %div
+          %p &copy; Groseillier 2012
+
+    //= javascript_include_tag 'application'

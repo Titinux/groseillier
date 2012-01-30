@@ -1,0 +1,43 @@
+.frame
+  margin: 0 10px
+  +border-radius
+  +single-box-shadow(#555555, 0, 0, 5px, 2px)
+
+.frame-header
+  padding: 5px 10px
+  height: 50px
+  border: 1px solid #AAAAAA
+  border-bottom: none
+
+  +border-top-left-radius
+  +border-top-right-radius
+  background-color: #BBBBBB
+  +background(linear-gradient(#EEEEEE, #BBBBBB))
+
+  h1
+    //display: inline
+    color: #555555
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.35)
+    font-family: "Trebuchet MS",Arial,sans-serif
+    font-size: 18px
+    font-weight: bolder
+    text-transform: uppercase
+    line-height: 39px
+    vertical-align: middle
+    margin: 0
+
+.frame-content
+  padding: 10px
+  background-color: white
+  border: 1px solid #AAAAAA
+
+.frame-footer
+  padding: 10px
+  height: 30px
+  border: 1px solid #AAAAAA
+  border-top: none
+
+  +border-bottom-left-radius
+  +border-bottom-right-radius
+  background-color: #BBBBBB
+  +background(linear-gradient(#BBBBBB, #EEEEEE))

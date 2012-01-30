@@ -1,0 +1,31 @@
+nav
+  a
+    //text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.35)
+    display: block
+    padding: 0 10px
+
+    &:hover
+      background-color: rgba(0, 0, 0, 0.25)
+
+  ul
+    +column(21)
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+  li
+    display: inline-block
+    margin-left: -0.25em
+    line-height: $layout-header-height
+    border-right: 1px dotted #555555
+    font-weight: bold
+
+    &:last-child
+      border-style: none
+
+    &.active
+      background-color: rgba(0, 0, 0, 0.25)
+
+  ul.right
+    +column(3, true)
+
