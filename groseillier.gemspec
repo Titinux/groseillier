@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.0"
   s.add_dependency "haml"
+  s.add_dependency "simple-navigation"
 
   s.add_development_dependency "sass-rails"
   s.add_development_dependency "coffee-rails"
