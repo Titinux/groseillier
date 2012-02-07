@@ -1,5 +1,3 @@
-Rails.application.routes.draw do
-  scope 'admin' do
-    root to: 'dashboard#show'
-  end
+Groseillier::Engine.routes.draw do
+  root to: 'dashboard#show'
 end

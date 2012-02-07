@@ -20,9 +20,10 @@
       #page
         .frame
           .frame-header
-            %h1 Page title
+            = content_for(:page_header)
 
           .frame-content
+            = yield
 
           .frame-footer
 
