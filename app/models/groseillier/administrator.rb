@@ -8,7 +8,7 @@ module Groseillier
              lock_strategy: :failed_attempts, maximum_attempts: 5, unlock_strategy: :email }
 
     # Setup accessible (or protected) attributes for your model
-    attr_accessible :nickname, :email, :password, :password_confirmation, :remember_me
+    attr_accessible :nickname, :email, :password, :password_confirmation, :remember_me, :preferred_locale
 
     # Validations
     validates :email,
@@ -29,5 +29,8 @@ module Groseillier
     validates :password,
               :presence => true,
               :on => :create
+
+    # Preferences
+    preference :locale, :string
   end
 end

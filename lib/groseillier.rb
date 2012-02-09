@@ -8,8 +8,11 @@ require "show_for"
 require "responders"
 require "simple_form"
 require "jquery-rails"
+require "preferences"
 
 module Groseillier
+  autoload :Locale, 'groseillier/locale'
+
   # Simple navigation config
   SimpleNavigation.config_file_paths << File.join(Groseillier::Engine.root, 'config', 'navigation')
 end

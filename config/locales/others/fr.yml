@@ -1,4 +1,8 @@
 fr:
+  locale:
+    name: Français
+    default: "Locale par défaut (%{locale_name})"
+
   actions:
     new: Créer
     destroy: Supprimer

@@ -7,3 +7,5 @@
   = a.attribute :current_sign_in_ip
   = a.attribute :last_sign_in_ip
   = a.attribute :locked_at
+  = a.attribute :preferred_locale do
+    = Groseillier::Locale.human_name(administrator.preferred_locale)

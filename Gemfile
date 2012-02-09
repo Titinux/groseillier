@@ -17,3 +17,4 @@ gem "jquery-rails"
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem "compass", "0.12.alpha.4"
+gem "preferences", git: "git://github.com/Titinux/preferences.git"
