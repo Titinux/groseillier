@@ -14,7 +14,8 @@
       %header
         %div.brand= link_to 'Groseillier'
         %nav.horizontal
-          = render_navigation(context: 'groseillier_main', renderer: :list)
+          - if administrator_signed_in?
+            = render_navigation(context: 'groseillier_main', renderer: :list)
           = render_navigation(context: 'groseillier_secondary', renderer: :list)
 
       #page
@@ -24,12 +25,20 @@
 
           .frame-content
             = render_flash_messages
-            = yield
+
+            - if content_for?(:action_bar)
+              .main-content
+                = yield
+              .action-bar
+                = content_for(:action_bar)
+            - else
+              = yield
 
           .frame-footer
+            = content_for(:page_footer)
 
       %footer
         %div
           %p Powered by Groseillier
 
-    //= javascript_include_tag 'application'
+    = javascript_include_tag 'application'

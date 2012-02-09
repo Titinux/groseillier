@@ -6,6 +6,18 @@ module Groseillier
       end
     end
 
+    def page_footer(&block)
+      content_for(:page_footer, &block)
+    end
+
+    def actions
+      content_for(:action_bar) do
+        capture_haml do
+          yield
+        end
+      end
+    end
+
     def render_flash_messages
       capture_haml do
         flash.each do |name, msg|

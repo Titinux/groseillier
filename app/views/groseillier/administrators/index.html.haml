@@ -1,0 +1,21 @@
+= page_header Groseillier::Administrator.model_name.human.pluralize
+
+%table
+  %thead
+    %tr
+      %th= Groseillier::Administrator.human_attribute_name :nickname
+      %th= Groseillier::Administrator.human_attribute_name :email
+      %th= t('actions.action').pluralize
+
+  %tbody
+    - @administrators.each do |administrator|
+      %tr
+        %td= administrator.nickname
+        %td= administrator.email
+        %td.action
+          = link_to t('actions.show'), administrator
+          = link_to t('actions.edit'), [:edit, administrator]
+          = link_to t('actions.destroy'), administrator, :confirm => t('actions.destroy_confirm'), :method => :delete
+
+= actions do
+  = render_navigation context: 'groseillier', :items => [{key: :new, name: t('actions.new'),                                                        url: new_administrator_path}]

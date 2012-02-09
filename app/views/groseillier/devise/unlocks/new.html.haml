@@ -1,0 +1,10 @@
+= page_header t('devise.links.unlock_mail_not_received')
+
+= simple_form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f|
+  = f.input :email, autofocus: true
+
+  .actions
+    = f.button :submit, t('devise.buttons.send_unlock_instructions')
+
+= page_footer do
+  = link_to t('navigation.back'), root_path

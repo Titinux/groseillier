@@ -1,0 +1,15 @@
+= page_header @administrator.nickname
+
+= render 'form'
+
+= actions do
+  = render_navigation context: 'groseillier', :items => [{key: :edit,
+                                                          name: t('actions.edit'),
+                                                          url: edit_administrator_path},
+                                                         {key: :delete,
+                                                          name: t('actions.destroy'),
+                                                          url: administrator_path(@administrator),
+                                                          options: { method: :delete }}]
+
+= page_footer do
+  = link_to t('navigation.back'), administrators_path

@@ -1,0 +1,11 @@
+fr:
+  activerecord:
+    models:
+      groseillier/administrator: Administrateur
+
+    attributes:
+      groseillier/administrator:
+        nickname: Pseudonyme
+        email: E-mail
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe

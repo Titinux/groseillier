@@ -1,0 +1,10 @@
+= page_header t('devise.links.forgotten_password')
+
+= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+  = f.input :email, autofocus: true
+
+  .actions
+    = f.button :submit, t('devise.buttons.send_password_reset_link')
+
+= page_footer do
+  = link_to t('navigation.back'), root_path

@@ -1,4 +1,15 @@
 fr:
+  actions:
+    new: Créer
+    destroy: Supprimer
+    destroy_confirm: Etes vous certain ?
+    edit: Modifier
+    show: Détails
+    action: Action
+
+  navigation:
+    back: Retour
+
   flash:
     names:
       notice: Information

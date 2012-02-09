@@ -1,0 +1,6 @@
+fr:
+  helpers:
+    submit:
+      create: Créer
+      submit: Enregistrer
+      update: Mettre à jour

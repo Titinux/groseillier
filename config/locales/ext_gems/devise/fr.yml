@@ -1,0 +1,68 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+fr:
+  errors:
+    messages:
+      expired: "a expiré, veuillez en demander une nouvelle"
+      not_found: "n'a pas été trouvé(e)"
+      already_confirmed: "a déjà été validé(e), veuillez essayer de vous connecter"
+      not_locked: "n'était pas verrouillé(e)"
+      not_saved:
+        one: "1 erreur a empêché ce(tte) %{resource} d'être sauvegardé(e) :"
+        other: "%{count} erreurs ont empêché ce(tte) %{resource} d'être sauvegardé(e) :"
+
+  devise:
+    failure:
+      already_authenticated: "Vous êtes déjà connecté !"
+      unauthenticated: "Vous devez vous connecter ou vous inscrire pour continuer."
+      unconfirmed: "Vous devez valider votre compte pour continuer."
+      locked: "Votre compte est verrouillé."
+      invalid: "Email ou mot de passe incorrect."
+      invalid_token: "Jeton d'authentification incorrect."
+      timeout: "Votre session est expirée, veuillez vous reconnecter pour continuer."
+      inactive: "Votre compte n'est pas encore activé."
+    sessions:
+      signed_in: "Vous êtes maintenent connecté."
+      signed_out: "Vous êtes maintenant déconnecté."
+    passwords:
+      send_instructions: "Vous allez recevoir les instructions de réinitialisation du mot de passe dans quelques instants."
+      updated: "Votre mot de passe a été édité avec succès, vous êtes maintenant connecté."
+      updated_not_active: "Votre mot de passe a été édité avec succès."
+      send_paranoid_instructions: "Si votre e-mail existe dans notre base de donnée, vous recevrez un lien permettant de changer votre mot de passe d'ici quelques instants."
+    confirmations:
+      send_instructions: "Vous allez recevoir les instructions nécessaires à la confirmation de votre compte dans quelques minutes."
+      send_paranoid_instructions: "Si votre e-mail existe dans notre base de donnée, vous revevrez un lien permettant d'activer votre compte d'ici quelques instants."
+      confirmed: "Votre compte a été validé, vous êtes maintenant connecté."
+    registrations:
+      signed_up: "Bienvenue, vous êtes connecté."
+      signed_up_but_unconfirmed: "Un message contenant un lien d'activation vous a été envoyé. Veuillez cliquer sur ce lien pour activer votre compte."
+      signed_up_but_inactive: "Les données de connexion sont correctes mais ce compte n'a actuellement pas été validé."
+      signed_up_but_locked: "Les données de connexion sont correctes mais ce compte est actuellement vérouillé."
+      updated: "Votre compte a été modifié avec succès."
+      update_needs_confirmation: "Votre compte à été mis à jour correctement mais nous devons vérifier votre nouvelle adresse e-mail. Veuillez cliquer sur le lien de confirmation qui vous a été envoyé."
+      destroyed: "Votre compte a été supprimé avec succès. Nous espérons vous revoir bientôt."
+    unlocks:
+      send_instructions: "Vous allez recevoir les instructions nécessaires au déblocage de votre compte dans quelques instants."
+      unlocked: "Votre compte a été débloqué avec succès, vous êtes maintenant connecté."
+      send_paranoid_instructions: "Si votre compte existe, vous recevrez un lien permettant de le dévérouiller d'ici quelques instants."
+    omniauth_callbacks:
+      success: "Authentifié avec succès via %{kind}."
+      failure: "Nous n'avons pas pu vous authentifier via %{kind} : '%{reason}'."
+    mailer:
+      confirmation_instructions:
+        subject: "Instructions de confirmation"
+      reset_password_instructions:
+        subject: "Instructions pour changer le mot de passe"
+      unlock_instructions:
+        subject: "Instructions pour déverrouiller le compte"
+    links:
+      sign_in: "Connexion"
+      sign_up: "Je souhaite créer un compte"
+      sign_out: "Déconnexion"
+      forgotten_password: "J'ai oublié mon mot de passe !"
+      activation_mail_not_received: "Je n'ai pas reçu le mail d'activation !"
+      unlock_mail_not_received: "Je n'ai pas reçu le mail de déblocage !"
+    buttons:
+      send_password_reset_link: "Envoyez moi le lien de changement du mot de passe"
+      change_password: "Modifier mon mot de passe"
+      send_unlock_instructions: "Envoyez moi le lien de déblocage"

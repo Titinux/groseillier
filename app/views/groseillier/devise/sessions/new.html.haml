@@ -1,0 +1,16 @@
+= page_header t('devise.links.sign_in')
+
+= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+  = f.input :email, autofocus: true
+  = f.input :password
+
+  .actions
+    = f.button :submit, t('devise.links.sign_in')
+
+= actions do
+  = render_navigation context: 'groseillier', :items => [{key: :forgot_password,
+                                                          name: t('devise.links.forgotten_password'),
+                                                          url: new_password_path(resource_name)},
+                                                         {key: :unlock_instructions,
+                                                          name: t('devise.links.unlock_mail_not_received'),
+                                                          url: new_unlock_path(resource_name)}]
