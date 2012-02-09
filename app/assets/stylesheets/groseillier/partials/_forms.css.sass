@@ -1,0 +1,69 @@
+form
+  .error_message
+    padding-left: 0.25em
+    color: #FF0000
+
+  input, select, textarea
+    display: block
+    margin-bottom: 0
+    padding: 7px
+    width: 300px
+    +border-radius
+    background-color: #FFFFFF
+    color: #555555
+    margin-top: 0.5em
+    border: 1px solid #AAAAAA
+
+    &:focus
+      +single-box-shadow(#2CA0CA, 0, 0, 2px, 1px)
+
+  .field_with_errors
+    input, select, textarea
+      +single-box-shadow(#FF0000, 0, 0, 2px, 1px)
+
+  input
+    &[type=submit]
+      display: inline-block
+      +button-button
+      +button-colors
+      border: 1px solid #186F8F
+      +box-shadow(0 1px 0 #7FD2F1 inset, 0 1px 0 #FFFFFF)
+      height: 30px
+
+      +text-shadow(#0A5482)
+      text-transform: uppercase
+
+      vertical-align: middle
+      background-color: #2CA0CA
+      +background(linear-gradient(#2CA0CA, #3EB8E5))
+
+      &:active
+        background-color: #3EB8E5
+        +background(linear-gradient(#3EB8E5, #2CA0CA))
+
+  textarea
+    width: 97%
+
+  label.required
+    abbr
+      color: #FF0000
+      border-color: #FF0000
+
+  label
+    color: #555555
+
+  .hint
+    color: #AAAAAA
+
+  .input
+    margin: 10px
+    margin-bottom: 20px
+
+  .actions
+    margin: 10px
+    width: 300px
+    text-align: center
+
+  fieldset
+    margin: 10px
+    padding: 0
