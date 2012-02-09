@@ -9,3 +9,10 @@ en:
         email: Email
         password: Password
         password_confirmation: Password confirmation
+        preferred_locale: Locale
+
+  groseillier/administrator:
+    identity: Identity
+    credentials: Credentials
+    account_status: Account status
+    preferences: Preferences

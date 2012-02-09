@@ -1,10 +1,14 @@
 = simple_form_for @administrator, html: { autocomplete: 'off' } do |f|
-  = f.input :nickname, :hint => true
-  = f.input :email
-  = f.input :password
-  = f.input :password_confirmation
+  = field_set_tag t('groseillier/administrator.identity') do
+    = f.input :nickname, :hint => true
+    = f.input :email
 
-  = f.input :preferred_locale, collection: Groseillier::Locale.collection_select(true), include_blank: false
+  = field_set_tag t('groseillier/administrator.credentials') do
+    = f.input :password
+    = f.input :password_confirmation
+
+  = field_set_tag t('groseillier/administrator.preferences') do
+    = f.input :preferred_locale, collection: Groseillier::Locale.collection_select(true), include_blank: false
 
   .actions
     = f.button :submit
