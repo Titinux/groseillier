@@ -1,0 +1,6 @@
+en:
+  flash:
+    names:
+      notice: Information
+      warning: Warning
+      alert: Error
