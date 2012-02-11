@@ -6,6 +6,11 @@
   = a.attribute :last_sign_in_at
   = a.attribute :current_sign_in_ip
   = a.attribute :last_sign_in_ip
-  = a.attribute :locked_at
+  = a.attribute :locked_at do
+    - if administrator.locked_at
+      = "#{administrator.human_attribute_name(:locked)} (#{l(administrator.locked_at)})"
+    - else
+      = t('simple_form.no')
+
   = a.attribute :preferred_locale do
     = Groseillier::Locale.human_name(administrator.preferred_locale)

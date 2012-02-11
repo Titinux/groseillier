@@ -5,7 +5,7 @@ module Groseillier
       # Convert locale (ex: :en) to human name (ex: English)
       def human_name(locale)
         if locale.blank?
-          I18n.t('locale.default', locale: default_locale, locale_name: I18n.t('locale.name', locale: default_locale))
+          I18n.t('locale.default', locale_name: I18n.t('locale.name', locale: default_locale))
         else
           I18n.t('locale.name', locale: locale)
         end

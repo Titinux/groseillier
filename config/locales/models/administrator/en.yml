@@ -10,9 +10,20 @@ en:
         password: Password
         password_confirmation: Password confirmation
         preferred_locale: Locale
+        sign_in_count: Nombre de connexion
+        current_sign_in_at: Current sign in at
+        current_sign_in_ip: Current sign in ip
+        last_sign_in_at: Last sign in at
+        last_sign_in_ip: Last sign in ip
+        locked: Locked
 
   groseillier/administrator:
     identity: Identity
     credentials: Credentials
     account_status: Account status
     preferences: Preferences
+
+  groseillier:
+    administrators:
+      new:
+        header: New administrator

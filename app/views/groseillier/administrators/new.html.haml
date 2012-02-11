@@ -1,4 +1,6 @@
-= page_header 'New administrator'
+= page_header t('.header')
 
 = render 'form'
 
+= page_footer do
+  = link_to t('navigation.back'), administrators_path
