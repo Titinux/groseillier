@@ -32,5 +32,11 @@ module Groseillier
         end
       end
     end
+
+    def full_page_class
+      classes = controller.class.name.underscore.split('/')
+      classes.map! { |c| c.chomp('_controller')}
+      classes << controller.action_name
+    end
   end
 end

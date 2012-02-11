@@ -7,9 +7,9 @@
     %title Groseillier
 
     = stylesheet_link_tag 'groseillier/admin', :media => 'screen, projection'
+    = yield :stylesheets
 
-  -#%body{:class => page_class}
-  %body
+  %body{:class => full_page_class}
     #layout
       %header
         %div.brand= link_to 'Groseillier'

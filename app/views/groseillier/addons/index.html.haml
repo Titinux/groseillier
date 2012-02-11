@@ -1,0 +1,10 @@
+= page_header t('groseillier/addon.name').pluralize
+
+%ul.addons
+  - @addons.each do |addon|
+    %li.addon
+      %p.title= addon.title
+      %p
+        = addon.description
+        %br
+        = "#{t('groseillier/addon.version')} : #{addon.version}"

@@ -11,5 +11,10 @@ module Groseillier
     end
 
     config.i18n.load_path += Dir[config.root.join('config', 'locales', '**', '*.{rb,yml}')]
+
+    config.after_initialize do
+      # Reload named routes after addons appends routes
+      Rails.application.routes_reloader.reload!
+    end
   end
 end

@@ -12,6 +12,8 @@ require "preferences"
 
 module Groseillier
   autoload :Locale, 'groseillier/locale'
+  autoload :Addon,  'groseillier/addon'
+  autoload :Addons, 'groseillier/addons'
 
   # Simple navigation config
   SimpleNavigation.config_file_paths << File.join(Groseillier::Engine.root, 'config', 'navigation')
