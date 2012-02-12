@@ -6,6 +6,10 @@ module Groseillier
       end
     end
 
+    def page_content(&block)
+      content_for(:page_content, &block)
+    end
+
     def page_footer(&block)
       content_for(:page_footer, &block)
     end
@@ -16,6 +20,14 @@ module Groseillier
           yield
         end
       end
+    end
+
+    def stylesheets(&block)
+      content_for(:stylesheets, &block)
+    end
+
+    def javascripts(&block)
+      content_for(:javascripts, &block)
     end
 
     def render_flash_messages

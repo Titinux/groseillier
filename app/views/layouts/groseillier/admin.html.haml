@@ -28,11 +28,11 @@
 
             - if content_for?(:action_bar)
               .main-content
-                = yield
+                = content_for?(:page_content) ? yield(:page_content) : yield
               .action-bar
                 = content_for(:action_bar)
             - else
-              = yield
+              = content_for?(:page_content) ? yield(:page_content) : yield
 
           .frame-footer
             = content_for(:page_footer)
@@ -41,4 +41,5 @@
         %div
           %p Powered by Groseillier
 
-    = javascript_include_tag 'application'
+    = javascript_include_tag 'groseillier'
+    = yield :javascripts
