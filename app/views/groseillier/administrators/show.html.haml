@@ -9,7 +9,8 @@
                                                          {key: :delete,
                                                           name: t('actions.destroy'),
                                                           url: administrator_path(@administrator),
-                                                          options: { method: :delete, :'data-confirm' => t('actions.destroy_confirm') }}]
+                                                          options: { method: :delete,
+                                                                     link: { :'data-confirm' => t('actions.destroy_confirm') }}}]
 
 = page_footer do
   = link_to t('navigation.back'), administrators_path
