@@ -1,8 +1,10 @@
+#coding: utf-8
+
 module Groseillier
   module GroseillierHelper
     def page_header(title)
       content_for :page_header do
-        content_tag :h1, title
+        content_tag :h1, truncate(title, length: 50, omission: '…')
       end
     end
 
